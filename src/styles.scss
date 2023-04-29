@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../src/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../src/assets/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../src/assets/fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../src/assets/fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../src/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../src/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('../src/assets/fonts/Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url('../src/assets/fonts/Anton-Regular.ttf') format('truetype');
+}

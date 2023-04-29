@@ -1,0 +1,93 @@
+.main-container {
+
+    nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    .main-banner {
+        height: 100vh;
+        background-image: url('https://fox-personal-page.netlify.app/static/media/bg-hero.aeba848ba3322bb08db1.jpg');
+        background-size: cover;
+        background-position-y: center;
+        display: flex;
+        align-items: center;
+        padding: 0rem 3rem;
+        justify-content: space-between;
+
+        .personal-info {
+            .hello{
+                h6 {
+                    font-family: 'Montserrat-Bold';
+                    font-size: 1.5rem;
+                    color: #fff;
+                    margin: 0%;
+                    span {
+                        color: #fe390c;
+                    }
+                }
+            }
+            .name {
+                h1 {
+                    font-size: 130px;
+                    color: #fff;
+                    font-family: 'Anton-Regular';
+                    font-weight: 100;
+                    margin: 0%;
+                }
+            }
+            .role {
+                h6 {
+                    font-family: 'Montserrat-Bold';
+                    font-size: inherit;
+                    color: #fff;
+                    margin: 0%;
+                }
+            }
+            .talk {
+                button {
+                    margin-top: 1.5rem;
+                    font-family: 'Montserrat-Bold';
+                    border-radius: 0.25rem;
+                    background-color: #fe390c;
+                    color: #fff;
+                    font-size: .75rem;
+                    padding: 1rem 1.5rem;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #ca2d09;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .social {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s all;
+                cursor: pointer;
+                .icon {
+                    color: #fff;
+                    display: flex;
+                }
+
+                &:hover {
+                    background-color: #fe390c;
+                }
+            }
+        }
+    }
+
+}

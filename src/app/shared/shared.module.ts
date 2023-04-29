@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LetsWorkComponent } from './lets-work/lets-work.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     FormContactComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,

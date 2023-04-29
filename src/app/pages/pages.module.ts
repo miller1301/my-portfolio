@@ -6,6 +6,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MyServicesComponent } from './my-services/my-services.component';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 
 
@@ -19,7 +20,8 @@ import { ComponentsModule } from '../components/components.module';
   imports: [
     CommonModule,
     SharedModule,
-    ComponentsModule
+    ComponentsModule,
+    AngularTypewriterEffectModule
   ]
 })
 export class PagesModule { }

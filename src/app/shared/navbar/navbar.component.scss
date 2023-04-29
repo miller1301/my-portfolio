@@ -1,12 +1,12 @@
 .main-container {
 
-    // background-color: #11121d;
     background-color: transparent;
     height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
+    transition: .3s all;
 
     .personal-logo {
         display: flex;
@@ -59,4 +59,8 @@
         }
     }
 
+}
+
+.bg-dark {
+    background-color: #111214;
 }

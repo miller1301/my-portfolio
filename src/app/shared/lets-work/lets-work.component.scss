@@ -1,0 +1,66 @@
+.lets-work {
+
+    padding: 0rem 3rem;
+    margin-top: -7rem;
+
+    .card-work {
+        padding: 4rem 5rem;
+        background-image: url('https://fox-personal-page.netlify.app/static/media/bg-collaboration.a7e8c28805091912556c.jpg');
+        background-size: cover;
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Anton-Regular';
+            text-align: center;
+            color: #FFF;
+            font-weight: inherit;
+            margin: 0rem;
+        }
+
+        .hire-me {
+            margin-bottom: 1.25rem;
+            margin-top: 2.5rem;
+            text-align: center;
+            button {
+                font-weight: 700;
+                background-color: #fe390c;
+                color: #FFF;
+                border-radius: 0.25rem;
+                font-size: .75rem;
+                padding: 1rem 1.5rem;
+                transition-duration: .15s;
+                cursor: pointer;
+                border: 0 solid #e5e7eb;
+
+                &:hover {
+                    background-color: #ca2d09;
+                }
+            }
+        }
+
+        .download-cv {
+            text-align: center;
+            button {
+                color: #a9a9aa;
+                font-weight: 600;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-family: 'Montserrat-Medium';
+                gap: 0.5rem;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                cursor: pointer;
+                background-color: initial;
+                border: 0 solid #e5e7eb;
+
+                svg {
+                    color: #fe390c;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+}

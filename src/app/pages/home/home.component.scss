@@ -90,4 +90,190 @@
         }
     }
 
+    .about-me {
+        display: flex;
+        padding: 6rem 3rem;
+
+        .total-projects, .years-experience {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+
+            .section {
+                width: 80%;
+                .image {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .info-projects, .info-experience {
+                    display: flex;
+                    width: 60%;
+                    align-items: center;
+                    gap: 0.75rem;
+                    h3 {
+                        font-family: "Montserrat-SemiBold";
+                        color: #000;
+                        font-size: .9rem;
+                        margin: 0%;
+                    }
+                    p {
+                        font-family: 'Anton-Regular';
+                        color: #fe390c;
+                        font-size: 64px;
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+
+        .total-projects {
+            .info-projects {
+                margin-top: 2rem;
+                margin-left: auto;
+                text-align: end;
+            }
+
+        }
+
+        .years-experience {
+            .info-experience {
+                margin-bottom: 2rem;
+                margin-right: auto;
+                text-align: start;
+            }
+            
+        }
+
+        .info-about {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            .number-item {
+                height: 70%;
+                p {
+                    font-family: 'Anton-Regular';
+                    color: #fe390c;
+                    font-size: 80px;
+                    margin: 0%;
+                    line-height: 60px;
+                }
+            }
+
+            .info {
+                height: 70%;
+                h2 {
+                    font-family: 'Anton-Regular';
+                    color: #000;
+                    font-size: 40px;
+                    margin: 0%;
+                }
+                p {
+                    line-height: 2rem;
+                    font-size: .875rem;
+                    color: #A9A9AA;
+                    font-family: "Montserrat-Medium";
+                }
+            }
+        }
+        
+    }
+
+    .platforms {
+
+        padding: 0rem 3rem;
+        padding-bottom: 7rem;
+        background-color: #f7f7f7;
+
+        .items-platforms {
+            gap: 5rem;
+            padding: 5rem 0rem;
+            display: flex;
+            justify-content: center;
+            filter: grayscale(100%);
+            opacity: .4;
+            svg {
+                font-size: 28px;
+            }
+        }
+
+    }
+
+    .my-services {
+        padding: 3rem 3rem 5rem;
+
+        .title-services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            h3 {
+                font-size: 80px;
+                color: #fe390c;
+                letter-spacing: .05em;
+                margin: 0;
+                font-weight: inherit;
+                font-family: 'Anton-Regular';
+            }
+            h2 {
+                font-size: 40px;
+                font-family: 'Anton-Regular';
+                letter-spacing: .05em;
+                margin: 0;
+                font-weight: inherit;
+            }
+        }
+
+        .cards-services {
+            display: flex;
+            gap: 4%;
+            padding-top: 1.5rem;
+            padding-bottom: 5rem;
+            
+            .card-service {
+                padding: 2.5rem 1.5rem;
+                background-color: #f7f7f7;
+                cursor: pointer;
+                transition-duration: .3s;
+
+                svg {
+                    stroke: #fe390c;
+                    transition-duration: .3s;
+                }
+                h4 {
+                    letter-spacing: -.05em;
+                    font-weight: 700;
+                    font-family: 'Montserrat-Medium';
+                    margin-bottom: 0.5rem;
+                    margin-top: 1.5rem;
+                    font-size: inherit;
+                    transition-duration: .3s;
+                }
+                p {
+                    color: #a9a9aa;
+                    letter-spacing: -.05em;
+                    line-height: 1.5rem;
+                    font-weight: 500;
+                    font-size: .875rem;
+                    font-family: 'Montserrat-Medium';
+                    margin: 0;
+                    transition-duration: .3s;
+                }
+
+                &:hover {
+                    background-color: #fe390c;
+                    svg {
+                        stroke: #FFF;
+                    }
+                    h4, p {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }    
+
 }

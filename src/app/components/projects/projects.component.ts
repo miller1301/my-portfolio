@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import {register} from 'swiper/element/bundle';
 
 @Component({
@@ -8,9 +8,15 @@ import {register} from 'swiper/element/bundle';
 })
 export class ProjectsComponent implements AfterViewInit {
 
-
   ngAfterViewInit(): void {
     register();
   }
+
+  swiperNextPrev( eventButton: string ) {
+    const swiperEl: any = document.querySelector('swiper-container')!;
+    const swiperSlide = swiperEl.swiper
+    eventButton === 'prev' ? swiperSlide.slidePrev() : swiperSlide.slideNext()
+  }
+  
 
 }

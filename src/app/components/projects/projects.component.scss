@@ -1,0 +1,191 @@
+.my-portfolio {
+    padding: 3rem;
+    background-color: #f7f7f7;
+
+    .title-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            h1 {
+                font-size: 80px;
+                color: #fe390c;
+                font-family: 'Anton-Regular';
+                letter-spacing: .05em;
+                font-weight: inherit;
+                margin: 0;
+            }
+            h3 {
+                font-size: 40px;
+                font-family: 'Anton-Regular';
+                letter-spacing: .05em;
+                font-weight: inherit;
+                margin: 0;
+            }
+        }
+
+        .filter-controls {
+            ul {
+                display: flex;
+                gap: 0.5rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border: 0 solid #e5e7eb;
+                li {
+                    transition-duration: .2s;
+                    font-weight: 600;
+                    font-size: .75rem;
+                    line-height: 1rem;
+                    font-family: 'Montserrat-Regular';
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-bottom: 0.75rem;
+                    padding-top: 0.75rem;
+                    border-radius: 0.25rem;
+                    cursor: pointer;
+                    color: #a9a9aa;
+                    border: 1px solid #e5e7eb;
+                }
+                li:hover, .active {
+                    color: #fe390c;
+                    border: 1px solid #fe390c;
+                }
+            }
+        }
+
+        .section-controls {
+            display: flex;
+            gap: 1.5rem;
+            .btn {
+                color: #FFF;
+                background-color: #fe390c;
+                border: 0 solid #e5e7eb;
+                border-radius: 0.25rem;
+                font-family: 'Montserrat-Regular';
+                font-size: .75rem;
+                line-height: 1rem;
+                padding: 0.75rem;
+                transition-duration: .15s;
+                cursor: pointer;
+                svg {
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    background-color: #ca2d09;
+                }
+
+                &-disabled {
+                    cursor: default;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+
+    .swiper {
+        margin-top: 1.25rem;
+        .project {
+            background-size: cover;
+            height: 20rem;
+            transition-duration: .5s;
+            transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-transform,-webkit-filter,-webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+            .info-project {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                transition-duration: .5s;
+
+                h3, h5 {
+                    transition-duration: .5s;
+                    color: transparent;
+                    margin: 0;
+                }
+                
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 32px;
+                    font-family: 'Anton-Regular';
+                    font-weight: inherit;
+                }
+
+                h5 {
+                    font-weight: 700;
+                    font-size: inherit;
+                    font-family: 'Montserrat-Medium';
+                }
+            }
+
+            &:hover {
+                cursor: grab;
+
+                .info-project {
+                    background-color: rgba(0, 0, 0, 0.6);
+
+                    h3, h5 {
+                        color: #FFF;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-1{
+                background-image: url('https://fox-personal-page.netlify.app/static/media/portfolio-1.3afb1eadf6a8df8232d2.jpg');
+            }
+            &-2 {
+                background-image: url('https://fox-personal-page.netlify.app/static/media/portfolio-2.29b9fdd77c02182910c3.jpg');
+            }
+            &-3 {
+                background-image: url('https://fox-personal-page.netlify.app/static/media/portfolio-3.e047bc3424ac13881457.jpg');
+            }
+            &-4 {
+                background-image: url('https://fox-personal-page.netlify.app/static/media/portfolio-4.6bf2b3137662d3a7da0c.jpg');
+            }
+            &-5 {
+                background-image: url('https://fox-personal-page.netlify.app/static/media/portfolio-5.9d8078629adfb4e85983.jpg');
+            }
+        }
+
+
+        swiper-container::part(pagination) {
+            display: flex;
+            justify-content: center;
+            bottom: -30px;
+        }
+        
+        swiper-container::part(bullet) {
+            opacity: 1;
+            background-color: #a7aab4;
+            border-radius: 0.125rem;
+            width: 1rem;
+            height: 0.25rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+        
+        swiper-container::part(bullet-active) {
+            background-color: #fe390c;
+            border-radius: 0.125rem;
+            width: 1rem;
+            height: 0.25rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+        
+        swiper-container::part(container) {
+            overflow-y: visible;
+        }
+    }
+
+}
